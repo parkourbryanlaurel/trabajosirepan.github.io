@@ -1,0 +1,50 @@
+<html lang="es">
+	<head>
+		<title> vocales </title>
+		<link rel="stylesheet" type="text/css" href="stilo_vocal.css">
+		<script>
+			function vocal(){
+				var cara = document.getElementById("letra").value;
+				switch(cara){
+				case 'a': case 'A' :
+					document.vocales.res.value="la letra "+cara+" es vocal";
+					break;
+				case 'e': case 'E':
+					document.vocales.res.value="la letra "+cara+" es vocal";
+					break;	
+				case 'i': case 'I':
+					document.vocales.res.value="la letra "+cara+" no es vocal";
+					break;
+				case 'o': case 'O' :
+					document.vocales.res.value="la letra "+cara+" es vocal";
+					break;
+				case 'u': case 'U' :
+					document.vocales.res.value="la letra "+cara+" es vocal";
+					break;
+				default:	
+					document.vocales.res.value="la letra "+cara+" es consonante";
+					break;
+            
+				}
+			}
+		</script>
+	</head>
+	<body bgcolor="#33ff00">
+		<center> <table border=10 class="tabla">
+			<tr>
+				<td>
+					<h1>¿Es vocal ? </h1>
+					<form name="vocales">
+						<label>Introduce un caracter:</label><br>
+						<input id="letra" size="1" type="text"/><br>
+						<input type="button" id="boton" value="DESCUBRIR" onclick="vocal()"/><br>
+						<input type="reset" id="boton" value="BORRAR"><br>
+						<input id="res" size="20" type="text"/>
+   
+					</form>
+				<td>
+			<tr>
+		</table>
+		<h1><a href="pt.html">regresar</a><br></h1>
+</body>
+</html>

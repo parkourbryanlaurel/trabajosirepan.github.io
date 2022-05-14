@@ -1,0 +1,79 @@
+<html lang="es">
+	<head>
+		<title>CALCULADORA BASICA</title>
+		<script type=text/javascript>
+			function funcionSuma()
+			{
+				var n1, n2, suma;
+				
+				n1 = parseInt(document.getElementById('num').value);
+				n2 = parseInt(document.getElementById('num2').value);
+				
+				suma = n1 + n2;
+				
+				document.FRM_Calculadora.txtResultado.value=suma;
+			}
+			function funcionResta()
+			{
+				var n1, n2, resta;
+				
+				n1 = parseInt(document.getElementById('num').value);
+				n2 = parseInt(document.getElementById('num2').value);
+				
+				resta = n1 - n2;
+				
+				document.FRM_Calculadora.txtResultado.value=resta;
+			}
+			function funcionMultiplicacion()
+			{
+				var n1, n2, multiplicacion;
+				
+				n1 = parseInt(document.getElementById('num').value);
+				n2 = parseInt(document.getElementById('num2').value);
+				
+				multiplicacion = n1 * n2;
+				
+				document.FRM_Calculadora.txtResultado.value=multiplicacion;
+			}
+			function funcionDivision()
+			{
+				var n1, n2, division;
+				
+				n1 = parseInt(document.getElementById('num').value);
+				n2 = parseInt(document.getElementById('num2').value);
+				
+				division = n1 / n2;
+				
+				document.FRM_Calculadora.txtResultado.value=division;
+			}
+		</script>
+	</head>
+	<body bgcolor="lightblue">
+		<h1>CALCULADORA BASICA EN HTML Y JAVASCRIPT</h1>
+		
+		<h3> OPERACION BASICA CON 2 NUMEROS</h3>
+		<form name="FRM_Calculadora" action="" method="">
+			<label>ingresa n1:</label><br>
+			<input type="text" Id="num" size="40" max="40"/><br>
+		
+			<label>ingresa n2:</label><br>
+			<input type="text" Id="num2" size="40" max="40"/><br>
+		
+		
+			<label> ELIGE OPERACION</label><br>
+		
+			<input type="button" Id="btnsuma" value="suma" onclick="funcionSuma()"/>
+		
+			<input type="button" Id="btnresta"value="resta" onclick="funcionResta()"/>
+		
+			<input type="button" Id="btnmultiplicacion"value="multiplicacion" onclick="funcionMultiplicacion()"/>
+		
+			<input type="button" Id="btndivision"value="division" onclick="funcionDivision()"/>
+		
+			<label> RESULTADO</label>
+			<input type="text" Id="txtResultado" size="40" maxlength="40"/><br>
+		
+		</form>
+		<h1><a href="pt.html">regresar</a><br></h1>
+	</body>
+</html>

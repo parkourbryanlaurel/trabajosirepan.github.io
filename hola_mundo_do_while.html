@@ -1,0 +1,57 @@
+<html lang="es">
+	<head>
+		<title>PAR O IMPAR</title>
+        <link rel="stylesheet" type="text/css" href="stilo_par_impar.css">
+		<script type=text/javascript>
+			function tablas()
+			{
+			
+				var op=parseInt(document.getElementById("opc").value)
+				switch (op){
+					
+					case 1:
+						
+						var  i=1
+						do{
+						   
+							document.write(i +"	:Hola   Mundo <br>  ");
+							i++;
+						}while(i<=10);
+						break;
+					case 2:
+						var contador=10;
+						do{
+							
+							document.write(contador +"	:Hola   Mundo <br>  ");
+							contador--;
+						}while(contador>=1);
+						break;
+					default:
+						alert("opcion incorrecta");
+						break;
+				}
+			}
+		</script>
+	</head>
+	<body bgcolor="#33ff00">
+	<center><h1>:) creciente y decreciente :)<h1></center>
+		<center><table class="tabla" border=10></center>
+			<tr>
+				<td>
+					<form name="FRM_parimpar"> 
+						
+						
+						<label>Introduce una opcion</label><br><br>
+						<label>[1]creciente    [2]decreciente  <label>
+						<input id="opc" type="text" size="10"/><br>
+						<input type="button" name="btncomparar" id="botoncomparacion"value="EJECUCION" onclick="tablas()"/>
+						
+						
+						
+					</form>
+				<td>
+			<tr>
+		</table>
+		<h1><a href="do_while.html">regresar</a><br></h1>
+	</body>
+</html>

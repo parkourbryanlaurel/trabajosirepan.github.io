@@ -1,0 +1,53 @@
+<html lang="es">
+	<title></title>
+		<head>
+			<link rel="stylesheet" type="text/css" href="stilo_par_impar.css">
+			<meta charset="utf-8">
+			<script>
+			function primo() {
+	
+
+				var numero=parseInt(document.getElementById("opc").value);
+				numero = numero;
+	
+				alert("Has introducido el numero: " + numero);
+				var i=2
+				
+				do{
+
+					document.write("residuo entre " + numero + " y " + i + " = " + (numero % i) + "<br>");
+
+					if (numero % i === 0) {
+						document.write(i + " es un multiplo de " + numero + "<br>");
+						document.write(numero + " no es un numero primo porque " + i + " es un multiplo <br>");
+						return false;
+					}
+					i++;
+				}while(i<numero);
+
+				if (numero === 1) {
+					document.write("Me has pasado el numero 1, recuerda que NO es un numero primo<br>");
+				} else {
+					document.write("Como el numero ingresado no tuvo mas múltiplos entonces determinamos que SI es un numero primo.<br>");
+				}
+			}
+
+			</script>
+		</head>
+	<body bgcolor=#ccccff>
+	
+		<center><table border=10 class="tabla">
+			<tr>
+				<td>
+		
+					<form name="FRM_primos" action="" method="">
+						<center>programa que indica si un numero es primo o no <br>
+						<input id="opc" type="text" size="10"/><br>
+						<input type="button" name="btncomparar" id="botoncomparacion"value="EJECUTAR" onclick="primo()"/>
+					</form>
+				</td>
+			</tr>
+		</table>
+		<h1><a href="do_while.html">regresar</a><br></h1>
+	</body>
+</html>

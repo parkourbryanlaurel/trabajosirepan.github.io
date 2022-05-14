@@ -1,0 +1,102 @@
+<html lang="es">
+	<head>
+		<title>CALCULO DE VOLUMENES</titlE>
+		<link rel="stylesheet" type="text/css" href="estilo1.css">
+		<script type=text/javascript>
+			function esfera()
+			{
+				//declaracion de variables
+				var radio, volEsfera;
+				//obtenemos los valores de las variables de entrada desde //los controles de tipo input-text del formulario
+				radio = parseFloat(document.getElementById("radioEsfera").value);
+				//calculamos el volumen
+				volEsfera = (4/3)*3.1416*radio*radio*radio;
+				//imprimimos el resultado en el control destinado para este fin 
+				alert("el volumen de la esfera es: " + volEsfera);
+			}
+			function VOLUMENPIRAMIDE()
+			{
+				//declaracion de variables
+				
+				var base4,base5,volpiramide;
+				//obtenemos los valores de las variables de entrada desde //los controles de tipo input-text del formulario
+				base4 = parseFloat(document.getElementById("base1").value);
+				base5 = parseFloat(document.getElementById("base2").value);
+				altura = parseFloat(document.getElementById("haltura").value);
+				//calculamos el volumen
+				volpiramide = (1/3)*base4*base5*altura;
+				//imprimimos el resultado en el control destinado para este fin 
+				alert("el volumen de la piramide es: " + volpiramide);
+				
+			}
+			function volumen_cubo()
+			{
+				//declaracion de variables
+				
+				var a, res;
+				//obtenemos los valores de las variables de entrada desde //los controles de tipo input-text del formulario
+				a = parseFloat(document.getElementById("area").value);
+				res=a*a*a;
+				//imprimimos el resultado en el control destinado para este fin 
+				alert("el volumen del cubo es: " + res);
+			}	
+			
+		</script>
+	</head>
+	<body bgcolor="#99ffcc">
+		<center><h1>CALCULAR VOLUMENES</h1></center>
+		<center><table border=8 class="tabla"></center>
+			<tr>
+				<td>
+					<center>
+						<h3>ESFERA</h3>
+						<img src="esfera.jfif" class="img1">
+					</center>
+					<form name="FRM_Esfera"> 
+						<label>Ingresa el Radio:</label>
+						<input type="text" id="radioEsfera"/>
+						<br>
+						<input type="button" name="btnVolEsfera" id="botonesfera"value="CALCULAR" onclick="esfera()"/>
+						<br>
+						
+					</form>
+				</td>
+				<td>
+					<center>
+						<h3>PIRAMIDE</h3>
+						<img src="piramide.jfif" class="img1">
+					</center>
+					<for name="FRM_piramide">
+						<label>ingresa la base 1:</label>
+						<input type="text"id="base1"/>
+						<br>
+						<label>ingresa la base 2:</label>
+						<input type="text"id="base2"/>
+						<br>
+						<label>ingresa la altura:</label>
+						<input type="text"id="haltura"/>
+						<br>
+						<input type="button" name="btnvolpiramide" id="botonpiramide" value="calcular" onclick="VOLUMENPIRAMIDE()"/>
+						<br>
+						
+					</for>
+				</td>
+				<td>
+					<center>
+						<h3>CUBO</h3>
+						<img src="cubo.jfif" class="img1">
+					</center>
+					<for name="frm_cubo">
+						<label>ingresa el area:</label>
+						<input type="text"id="area"size="40" maxlength="40">
+						<br>
+						<input type="button" name="btnvolcubo" id="volumen_1" value="calcular" onclick="volumen_cubo()"/>
+						<br>
+						
+					</for>
+				</td>
+			</tr>
+		</table>
+		<h1><a href="pt.html">regresar</a><br></h1>
+	</body>
+</html>

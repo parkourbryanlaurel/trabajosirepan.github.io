@@ -1,0 +1,51 @@
+<html lang="es">
+	<head>
+		<title>tabla de multiplicar</title>		
+		<link rel="stylesheet" type="text/css" href="stilo_par_impar.css">
+		<script type=text/javascript>
+			function funcion(){
+				n=parseInt(document.getElementById("valor").value);
+				if (n==1 || n==2 || n==3 || n==4 || n==5 || n==6 || n==7 || n==8 || n==9 || n==10)
+				{
+					var conta=0
+					var cont=0
+					do{
+					    var cont=0
+						conta++;
+						document.write("[tabla de multiplicar del " + conta + "<br>");
+						do{
+							cont++;
+							
+							res=cont*conta
+							document.write( + conta + "x" + cont + "=" + res + "<br>" );
+						}while (cont<=10-1);
+					
+					}while(conta<=n-1);
+				}	
+				
+				else 
+				{
+					alert(" la tabla que usted eligio no existe")
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table border=10 class="tabla">
+			<tr>
+				<td>
+					<form>
+						<center><h2>PROGRAMA QUE IMPRIME LAS TABLAS DE MUNTIPLICAR</h2><br><br>
+						introduce hasta que tabla quieres imprimir:<input type="text" id="valor" ><br>
+						<br>[1] asta [10]:
+						<br>
+						<input type="button" id="boton" value="click" onclick="funcion()">
+						
+						
+					</form>
+				</td>
+			</tr>
+		</table>
+		<h1><a href="do_while.html">regresar</a><br></h1>
+	</body>
+</html>

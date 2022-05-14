@@ -1,0 +1,25 @@
+.tabla{
+	background-color:#00ffff;
+	width:700px;
+	height:500px;
+}
+#botoncomparacion{
+	background-color:#000000;
+	color:#ffffff;
+	width:100px;
+	height:50px;
+}
+#btborrar{
+	background-color:#000000;
+	color:#ffffff;
+	width:100px;
+	height:50px;
+}
+#num1{
+	background-color:#ffff00;
+	color:#000000
+}
+#num2{
+	background-color:#ffff00;
+	color:#000000
+}

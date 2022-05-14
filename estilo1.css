@@ -1,0 +1,42 @@
+.img1{
+	width:200px;
+	height:200px;
+	border-radius:200px;
+}
+.tabla{
+	background-color:#00ffff;
+}
+#radioesfera{
+	background-color:#ffff00;
+	color:#000000
+}
+
+#botonesfera{
+	background-color:#000000;
+	color:#ffffff;
+}
+#base1{
+	background-color:#ffff00;
+	color:#000000;
+}
+ #base2{
+	background-color:#ffff00;
+	color:#000000;
+}
+#botonpiramide{
+	background-color:#000000;
+	color:#ffffff;
+}
+#area{
+	background-color:#ffff00;
+	color:#000000
+}
+
+#volumen_1{
+	background-color:#000000;
+	color:#ffffff;
+}
+#haltura{
+	background-color:#ffff00;
+	color:#000000
+}

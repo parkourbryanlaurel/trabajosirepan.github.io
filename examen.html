@@ -1,0 +1,77 @@
+<html lang="es">
+	<head>
+		<title>Examen</title>
+		<link rel="stylesheet" type="text/css" href="examen.css">
+		<script type=text/javascript>
+			function examenes()
+			{
+				
+				var prestamo= parseFloat(document.getElementById("cantidad").value);
+				var mes= parseFloat(document.getElementById("meses").value);
+			
+			
+				
+				
+				document.write("<pre>num de pago:      mensualidad:             iva 16%:                 interes:             total:            saldo:</pre><br>");
+				var cont=1;
+					    while (cont<=mes){
+						    
+							var mensualidad,iva,intere,total,saldo;	
+							if(cont<=1){
+									mensualidad=prestamo/mes;
+									iva=mensualidad*16/100;
+									interes=prestamo*1.5/100;
+									total =prestamo;
+									saldo=prestamo-mensualidad;  
+									document.write( "<pre>   " + cont + "           " + mensualidad + "     " + iva + "               " + interes + "                  " + total+ "       " + saldo + "    </pre>" );
+									
+									}
+							else if(cont==mes){
+								mensualidad=prestamo/mes;
+								iva=mensualidad*16/100;	
+								interes=saldo*1.5/100;
+								total =mensualidad+iva+interes+saldo;
+								saldo=saldo*0;
+								document.write( "<pre>   " + cont + "           " + mensualidad + "      " + iva + "        " + interes + "                " + total+ "               " + saldo + "    </pre>" );
+								}
+							else {
+								mensualidad=prestamo/mes;
+								iva=mensualidad*16/100;	
+								interes=saldo*1.5/100;
+								total =mensualidad+iva+interes+saldo;
+								saldo=saldo-mensualidad;
+								document.write( "<pre>   " + cont + "           " + mensualidad + "      " + iva + "          " + interes + "              " + total+ "             " + saldo + "    </pre>" );
+								
+							
+							}
+							cont++;
+							
+							
+						}
+					
+				}
+			
+		</script>
+	</head>
+	<body bgcolor="#33ff00">
+		<center><h1>Examen</h1> 
+			<center><table border=10 class="tabla">
+				<tr>
+					<td>
+							<form name="FRM_Examen" action="" method="">
+								<label>SIMULADOR DE CREDITO FINACIERO </label><br><br>
+								<label>CANTIDAD A SOLICITAR:</label><br>
+								<input type="text" id="cantidad" size="40" max="40"/><br>
+								<label>NUM. DE MESES:</label><br>
+								<input type="text" id="meses" size="40" max="40"/><br>
+								<input type="button" Id="btnsuma" value="MOSTRAR" onclick="examenes()"/><br>
+								
+							</form>
+							
+							
+					</td>		
+				</tr>			
+			</table>
+			<h1><a href="index.html">"REGRESAR"</a></h1>
+	</body>
+</html>

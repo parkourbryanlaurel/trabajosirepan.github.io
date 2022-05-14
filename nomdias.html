@@ -1,0 +1,60 @@
+ <html lang="es">
+	<head>
+   
+		<title>nombre_dias</title>
+		<link rel="stylesheet" type="text/css" href="dia1.css">
+		<script>
+			function dias(){
+				var numeroDia;
+				numeroDia = parseInt(document.getElementById("dia").value)
+				switch(numeroDia){ 
+					case 1:  
+						alert("El dia es Lunes:)");
+						break;
+					case 2: 
+						alert("El dia es Martes:)");
+						break;
+					case 3:
+						alert("El dia es Miercoles:)");
+						break;
+					case 4:
+						alert("El dia es Jueves:)");
+						break;
+					case 5 :
+						alert("El dia es Viernes:)");
+						break;
+					case 6:
+						alert("El dia es Sabado:)");
+						break;
+					case 7:
+						alert("El dia es Domingo:)");
+						break;
+					default : 
+						alert("Ese día no existe o no sido encotrado");
+						break;
+				}
+			}
+      
+		</script>
+
+	</head>
+	<body bgcolor="#33ff00">
+		<center> <table border=10 class="tabla">
+			<tr>
+				<td>
+					<h1>Dia segun su numero</h1>
+    
+					<form name="nomre_dias">
+						<label>Introcude el dia de la semana</label>
+						<input id="dia" type="text" size="10"/><br>
+						<input type="button" value="transformar" id="boton"onclick="dias()"/><br>
+						<input type="reset" value="BORRAR" id="boton" /><br>
+            
+					</form>
+				</td>
+			
+			</tr>
+		</table>
+		<h1><a href="pt.html">regresar</a><br></h1>
+	</body>
+</html>

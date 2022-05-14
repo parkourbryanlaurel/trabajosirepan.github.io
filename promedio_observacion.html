@@ -1,0 +1,65 @@
+<html lang="es">
+    <head>
+        <title>promedio</title>
+		<link rel="stylesheet" type="text/css" href="stilo_promedio.css">
+    <script type=text/javascript>
+        function promedio(){
+            var a=parseFloat(document.getElementById("cal1").value);
+            var b=parseFloat(document.getElementById("cal2").value);
+            var c=parseFloat(document.getElementById("cal3").value);
+            var suma=parseFloat(a+b+c);
+            suma=suma/3;
+            document.promedioc.fin.value=suma;
+			
+			
+			
+            if(suma<6){
+				alert("reprobaste");
+            }
+            else if(suma>=10){
+                   alert("Exelente");
+            }
+            else if(suma>=9.0 && suma<=9.9){
+                   alert("Muy bien");
+            }
+            else if(suma>=8.0 && suma<=8.9){
+                alert("bien");
+            }
+            else if(suma>=7.0 && suma<=7.9){
+                alert("Regular");
+            }
+            else(suma>=6.0 && suma<=6.9){
+                alert("Suficiente");
+            }
+            
+            
+            
+        }
+    </script>
+    </head>
+    <body bgcolor="#33ff00">
+		<center><table border=10 class="tabla">
+			<tr>
+				<td>
+					<h1>PROMEDIO</h1>
+					<form name="promedioc">
+						<label>calificacion 1</label>
+						<input id="cal1" type="text" size="20"/><br>
+						<label>calificacion 2 </label>
+						<input id="cal2" type="text" size="20"/><br>
+						<label>calificacion 3 </label>
+						<input id="cal3" type="text" size"20"/><br>
+						<input type="button" id="btpromedio" value="promedio" onclick="promedio()"/><br>
+						<input type="reset" id=btborrar value="BORRAR" /><br><br>
+						<label>promedio:</label>
+						<input type="text" size="20" id="fin"/><br>
+						
+					</form>
+				<td>
+			
+			<tr>
+		</table>
+		<h1><a href="pt.html">regresar</a><br></h1>
+    </body>
+    
+</html>

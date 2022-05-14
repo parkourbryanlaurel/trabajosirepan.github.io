@@ -1,0 +1,39 @@
+<html lang="es">
+	<head>
+		<title>sucesion fibonacci</title>		
+		<link rel="stylesheet" type="text/css" href="stilo_par_impar.css">
+		<script type=text/javascript>
+			function fibonacci(){
+				
+					{
+					
+						var limit=prompt("Ingresa el numero a calcular");
+						limit = limit;
+					var fibo = [0,1];
+
+					for(i=2; i <= limit; i++){
+					fibo.push(fibo[i-1] + fibo[i-2]);
+					document.write("["+fibo[i]+" ;)]");	
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table border=10 class="tabla">
+			<tr>
+				<td>
+					<form>
+						<center><h2>PROGRAMA QUE MUESTRA LA SUCESION DE FIBONACCI DE 1 HASTA N,LA SUCESION DE FIBNACCI COMIENZA CON DOS NUMEROS EN 1 Y A PARTIR DEL TERCERO SE 
+						 CALCULAN SUMANDO LOS DOS NUMEROS ANTERIORES.</h2><br><br>
+						
+						<input type="button" id="boton" value="click" onclick="fibonacci()">
+						
+						
+					</form>
+				</td>
+			</tr>
+		</table>
+		<h1><a href="for.html">regresar</a><br></h1>
+	</body>
+</html>

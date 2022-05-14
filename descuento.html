@@ -1,0 +1,45 @@
+<html lang="es">
+   <head>
+         <!--si la suma de 3 productos es mayor o igual a 5000 descuento del 15% -->
+      <title>Descuento</title>
+	  <link rel="stylesheet" type="text/css" href="stilo_descuento.css">
+      <script type=text/javascript>
+         function descuentodel(){
+            
+              var a=parseFloat(document.getElementById("producto1").value);
+              var b=parseFloat(document.getElementById("producto2").value);
+              var c=parseFloat(document.getElementById("producto3").value);
+            var sumatotal=a+b+c;
+            sumatotal=parseInt(sumatotal);
+            if(sumatotal>=5000){
+               sumatotal=sumatotal-(15/100)*sumatotal
+            }
+            document.descuento.total.value=sumatotal;
+         }
+   
+   
+      </script>
+   </head>
+   <body bgcolor="#33ff00">
+		<center><h1>Descuento </h1>
+		<table border=10 class="tabla"></center>
+			<tr>
+				<td>
+					<form name="descuento">
+						<label>Producto 1:</label>
+						<input type="text" size="20" id="producto1"/><br><br>
+						<label>Producto 2:</label>
+						<input type="text" size="20" id="producto2"/><br><br>
+						<label>Producto 3:</label>
+						<input type="text" size="20" id="producto3"/><br><br>
+						<input type="button" id="bt_total" value="total" onclick="descuentodel()"><br>
+						<input type="reset" id="btborrar" value="BORRAR" /> <br>
+						<label>total a pagar</label> 						
+						<input type="text" id="total" size="20"/>
+					</form>
+				</td>
+			</tr>
+		</table>
+		<h1><a href="pt.html">regresar</a><br></h1>
+   </body>
+</html>

@@ -1,0 +1,17 @@
+.tabla{
+	background-color:#00ffff;
+	width:500px;
+	height:300px;
+}
+#boton{
+	background-color:#000000;
+	color:#ffffff;
+}
+#letra{
+	background-color:#ffff00;
+	color:#000000;
+}
+#res{
+	background-color:#ffff00;
+	color:#000000;
+}

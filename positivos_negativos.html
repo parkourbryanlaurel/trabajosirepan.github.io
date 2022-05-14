@@ -1,0 +1,60 @@
+<html lang="es">
+	<head>
+		<title>PAR O IMPAR</title>
+		<link rel="stylesheet" type="text/css" href="stilo_par_impar.css">
+		<script type=text/javascript>
+			function par_impar()
+			{
+				var num,res;
+				num=parseFloat(document.getElementById("num1").value);
+				res = num % 2;
+				if (res == 0)
+				{
+					if (num<0){
+						alert("el "+num+" es negativo y es par:)");
+					}
+					else{
+						alert("el "+num+" es positivo y es par:)");
+					}
+					
+					
+				}
+				
+				else if (res==1)
+				{
+					if(num>0){
+						alert("el "+num+" es positivo y es impar");
+					}
+					else{
+						alert("el "+num+" es negativo y es impar");
+					}
+					
+				}
+				else{
+					alert("ese numero no s e puede definir que es ]:")
+				}
+				
+				
+			}
+		</script>
+	</head>
+	<body bgcolor="#33ff00">
+	<center><h1>:) PAR O IMPAR :)<h1></center>
+		<center><table class="tabla" border=10></center>
+			<tr>
+				<td>
+					<form name="FRM_parimpar"> 
+						<h1><label>ingresa un numero:</label></h1>
+						<input type="text" id="num1"/>
+						<br><br>
+						<input type="button" name="btncomparar" id="botoncomparacion"value="COMPARAR" onclick="par_impar()"/>
+						<input type="reset" id=btborrar value="BORRAR" />
+						<br>
+						
+					</form>
+				<td>
+			<tr>
+		</table>
+		<h1><a href="pt.html">regresar</a><br></h1>
+	</body>
+</html>

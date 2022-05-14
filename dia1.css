@@ -1,0 +1,13 @@
+.tabla{
+	background-color:#00ffff;
+	width:700px;
+	height:500px;
+}
+#boton{
+	background-color:#000000;
+	color:#ffffff;
+}
+#dia{
+	background-color:#ffff00;
+	color:#000000;
+}

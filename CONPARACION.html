@@ -1,0 +1,52 @@
+<html lang="es">
+	<head>
+		<title>COMPARACION DE 2 NUMEROS </title>
+		<link rel="stylesheet" type="text/css" href="stilo_comparacion.css">
+		<script type=text/javascript>
+			function comparacion()
+			{
+				//declaracion de variables 
+				
+				var n1, n2;
+				//obtener valores de entrada
+				n1=parseFloat(document.getElementById("num1").value);
+				n2=parseFloat(document.getElementById("num2").value);
+				//formula u operacion 
+				if (n1>n2)
+				{
+					alert(n1 + " ES MAYOR QUE " + n2);
+				}
+				else if(n2>n1)
+				{
+					alert(n2 + " ES MAYOR QUE " + n1);
+				}
+				else
+				{
+					alert("SON IGUALES :)")
+				}
+				
+			}
+		</script>
+	</head>
+	<body bgcolor="#33ff00">
+		<center><h1>COMPARAR 2 NUMEROS<h1></center>
+		<center><table class="tabla" border=8></center>
+			<tr>
+				<td>
+					<form name="FRM_Comparacion"> 
+						<h1><label>Ingresa el primer numero:</label></h1>
+						<input type="text" id="num1"/>
+						<br>
+						<h1><label>Ingresa el segundo numero:</label></h1>
+						<input type="text" id="num2"/>
+						<br><br>
+						<input type="button" name="btncomparar" id="botoncomparacion"value="COMPARAR" onclick="comparacion()"/>
+						<input type="reset" id=btborrar value="BORRAR" />
+						<br>
+					</form>
+				<td>
+			<tr>
+		</table>
+		<h1><a href="pt.html">regresar</a><br></h1>
+	</body>
+</html>

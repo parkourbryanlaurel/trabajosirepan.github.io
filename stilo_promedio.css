@@ -1,0 +1,29 @@
+.tabla{
+	background-color:#00ffff;
+	width:700px;
+	height:500px;
+}
+#btpromedio{
+	background-color:#000000;
+	color:#ffffff;	
+}
+#btborrar{
+	background-color:#000000;
+	color:#ffffff;
+	
+}
+#cal1{
+	background-color:#ffff00;
+	color:#000000
+}
+#cal2{
+	background-color:#ffff00;
+	color:#000000
+}
+#cal3{
+	background-color:#ffff00;
+	color:#000000
+}#fin{
+	background-color:#ffff00;
+	color:#000000
+}
